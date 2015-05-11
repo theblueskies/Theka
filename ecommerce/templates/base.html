@@ -11,12 +11,15 @@
 
     <title>{% block head_title %}{% endblock %}Theka</title>
 
+    {% load staticfiles %}
+    <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}' />
+    <link rel="stylesheet" href='{% static "css/bootstrap-theme.min.css" %}' />
     <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!-- Optional theme 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
 
 
     <!-- Custom styles for this template -->
@@ -36,6 +39,8 @@
   <body>
 
 {% include 'navbar.html' %}
+	{% block jumbotron %}
+	{% endblock %}
 
     <div class="container">
 
