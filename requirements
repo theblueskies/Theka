@@ -1,0 +1,14 @@
+#Current requirements
+
+Django==1.7
+Pillow==2.8.1
+pytz==2015.2
+wsgiref==0.1.2
+
+
+#Steps to follow:
+1. Install Django
+2. Get Python 2.7
+3. Clone the repo with "git clone"
+4. Do your stuff.
+5. No tests yet. If you can write some tests, it will be mucho appreciated. Will get around to tests soon.
